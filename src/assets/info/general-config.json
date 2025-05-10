@@ -5,15 +5,15 @@
   "defaultTitle": "MSMC |",
   "icon": "/faction-logos/msmc.svg",
   "header": {
-    "planet": "Hercynia",
-    "year": "5014u",
-    "system": "Ardennes-3",
-    "gate": "Atlas-Quanokrim",
-    "ring": "Atlas-Line",
+    "planet": "'Big Blue'",
+    "year": "5017u",
+    "system": "Ardennes",
+    "gate": "Rào Cỏ",
+    "ring": "Annamite",
     "headerTitle": "Mirrorsmoke",
     "headerSubtitle": "Mercenary Company",
-    "subheaderTitle": "Crisis Response",
-    "subheaderSubtitle": "Delta-Echo-Echo-Zulu"
+    "subheaderTitle": "Contract Work",
+    "subheaderSubtitle": "Sierra-Whiskey-Alpha-Golf"
   },
   "pilotSpecialInfo": {}
 }
