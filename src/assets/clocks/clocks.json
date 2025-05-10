@@ -1,0 +1,11 @@
+[
+	{
+		"type": "Story",
+		"result": "Neutral",
+		"name": "Test",
+		"description": "Big ass description",
+		"color": "#93E7Be",
+		"value": 6,
+		"max": 10
+	}
+]
