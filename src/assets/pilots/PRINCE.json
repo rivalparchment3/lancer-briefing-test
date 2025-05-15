@@ -1,35 +1,35 @@
 {
-    "id": "ae8ea5b7-5b59-4912-b7bf-3be73b17a539",
+    "id": "f349fe61-1e9f-49a4-b038-2e518908db17",
     "level": 0,
-    "callsign": "Indigo",
-    "name": "Diego Vigo Cappuccino",
-    "player_name": "---",
+    "callsign": "Prince",
+    "name": "Nikolas",
+    "player_name": "",
     "status": "Active",
     "dead": false,
-    "text_appearance": "<p>Darker skin, white hair, blue eyes. On the shorter side of the spectrum for the average late-20s male. Now has a barcode over his chest where his heart is - not sure what it means.</p>",
+    "text_appearance": "",
     "notes": "",
-    "history": "<p>Diego Vigo Cappuccino was born and raised in the shelter of the House of Dust, showing a natural knack for piloting the various machines that someone from the middle class would use. He eventually made his way into college, where he found his way into competing in pankration mekani, proving himself to be a real threat to some of the more senior members - especially when it came down to the cage fights. His very positive win record got to his head, as he began toying with those he decided didn't deserve his full attention. Fans loved his showboating -- his opponents loathed it. His flamboyant nature caught up with him eventually, leading to an eventual scandal that forced him to give up the sport entirely.<br><br>Looking for a career change, he signed up with the MSMC, where he passed with flying colors and began his career as a mercenary. Same as ever for Diego - he began to rise above the rest and make a name for himself, alongside the rest of his detachment. Before the rim knew of his name, he was snuffed out in a mission like any other.<br><br>Sometime later, he jolts back to life, realizing what went down. He was murdered, and was once again given a chance. The only thing he knows is the face of his killer, and he can't wait to see how that face contorts when they see a dead man walking.</p>",
+    "history": "<p>Discarded by the Head of his House and removed from the line of succession for failing to meet their standards, Niko was left aimless for most of his teenage years. During those years he dedicated all his time to his two passions, archery and piloting.</p><p>A short few months after his twenty-second birthday, Niko was presented with the chance to join the MSMC, eventually going on to graduate at the top of his class.</p>",
     "quirks": [],
-    "current_hp": 9,
-    "background": "Pankrati",
+    "current_hp": 6,
+    "background": "Noble",
     "resistances": [],
     "mechs": [
         {
-            "id": "d9a638c4-4dac-4e32-98b8-9d07709c6ef8",
-            "name": "Let's Talk",
+            "id": "272b88ad-178d-4cef-bffa-e889f9151c2c",
+            "name": "Little Lord",
             "notes": "",
             "gm_note": "",
-            "frame": "mf_standard_pattern_i_everest",
+            "frame": "mf_chomolungma",
             "active": false,
             "current_structure": 4,
             "current_move": 4,
             "boost": 0,
-            "current_hp": 14,
+            "current_hp": 12,
             "overshield": 0,
             "current_stress": 4,
             "current_heat": 0,
-            "current_repairs": 5,
-            "current_overcharge": 0,
+            "current_repairs": 4,
+            "current_overcharge": 1,
             "current_core_energy": 1,
             "statuses": [],
             "conditions": [],
@@ -43,15 +43,15 @@
             "reactor_destroyed": false,
             "core_active": false,
             "cc_ver": "ERR",
-            "lastModified": "Sat May 10 2025 21:35:20 GMT-0500 (Central Daylight Time)",
+            "lastModified": "Thu May 15 2025 00:05:21 GMT-0400 (Eastern Daylight Saving Time)",
             "isDeleted": false,
             "expireTime": "",
             "deleteTime": "",
             "portrait": "",
-            "cloud_portrait": "https://d1nurxym97qk9o.cloudfront.net/public/us-east-1:e8136a89-be4a-475e-a2ca-2deca7c0c60f/mech/Lets Talk.png",
+            "cloud_portrait": "",
             "loadouts": [
                 {
-                    "id": "c4f1dbae-c166-4c4b-a4f0-b779148984c9",
+                    "id": "be56d1fe-074c-4da1-9124-9997a747a4e7",
                     "name": "Primary",
                     "systems": [
                         {
@@ -63,12 +63,20 @@
                             "flavorDescription": ""
                         },
                         {
-                            "id": "ms_armament_redundancy",
+                            "id": "GMSC_systems_micro-maintenance_suite",
                             "uses": 0,
                             "destroyed": false,
                             "cascading": false,
                             "flavorName": "",
-                            "flavorDescription": "By installing additional armor plating, redundant firing circuits, and enhanced insulation to magazines the longevity of a frame’s armaments can be greatly enhanced."
+                            "flavorDescription": "<div><em>The GMS Micro-Maintenance Suite activates spare motile ablative and fabrication modules commonly found in combat vehicles to proactive protect key components.</em></div>"
+                        },
+                        {
+                            "id": "GMSC_systems_systems_override_",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false,
+                            "flavorName": "",
+                            "flavorDescription": "<div><em>GMS wartime electronic assault packages typically focus on exploiting commonalities among mech systems.</em></div>"
                         },
                         {
                             "id": "ms_personalizations",
@@ -79,38 +87,46 @@
                             "flavorDescription": ""
                         },
                         {
-                            "id": "ms_eva_module",
+                            "id": "ms_rapid_burst_jump_jet_system",
                             "uses": 0,
                             "destroyed": false,
                             "cascading": false,
                             "flavorName": "",
                             "flavorDescription": ""
-                        },
-                        {
-                            "id": "ms_type_3_projected_shield",
-                            "uses": 0,
-                            "destroyed": false,
-                            "cascading": false,
-                            "flavorName": "",
-                            "flavorDescription": "The GMS Type-3 Projected Shield traps and denies incoming projectiles by projecting an aggressive, superpositional anti-ballistic barrier."
                         }
                     ],
                     "integratedSystems": [],
                     "mounts": [
                         {
-                            "mount_type": "Main",
+                            "mount_type": "Main/Aux",
                             "lock": false,
                             "slots": [
                                 {
                                     "size": "Main",
                                     "weapon": {
-                                        "id": "mw_shotgun",
+                                        "id": "mw_assault_rifle",
                                         "destroyed": false,
                                         "cascading": false,
                                         "loaded": true,
                                         "mod": null,
                                         "flavorName": "",
                                         "flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.",
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0,
+                                        "uses": 0,
+                                        "selectedProfile": 0
+                                    }
+                                },
+                                {
+                                    "size": "Auxiliary",
+                                    "weapon": {
+                                        "id": "mw_nexus_light",
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "flavorName": "",
+                                        "flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
                                         "customDamageType": null,
                                         "maxUseOverride": 0,
                                         "uses": 0,
@@ -129,13 +145,13 @@
                                 {
                                     "size": "Flex",
                                     "weapon": {
-                                        "id": "mw_thermal_pistol",
+                                        "id": "mw_assault_rifle",
                                         "destroyed": false,
                                         "cascading": false,
                                         "loaded": true,
                                         "mod": null,
                                         "flavorName": "",
-                                        "flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-II (T-2) line displays GMS’s proprietary “charged” melee weapons and energy weapons.",
+                                        "flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-I (T-1) line is defined by powerful, reliable, and conventional-kinetic ranged and melee weapons, including the GMS assault rifle, heavy machine gun, shotgun, pistol, and various light and heavy blades. Reliable galactic standards, the GMS T-1 line is the most widely used mech-scale line of weaponry across the galaxy. Echoing the Everest’s design notes, T-1 weapons are simply designed, with few (if any) moving parts, intended to be used in or adaptable to any environment.",
                                         "customDamageType": null,
                                         "maxUseOverride": 0,
                                         "uses": 0,
@@ -146,46 +162,9 @@
                             "extra": [
                                 {
                                     "size": "Auxiliary",
-                                    "weapon": {
-                                        "id": "mw_thermal_pistol",
-                                        "destroyed": false,
-                                        "cascading": false,
-                                        "loaded": true,
-                                        "mod": null,
-                                        "flavorName": "",
-                                        "flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-II (T-2) line displays GMS’s proprietary “charged” melee weapons and energy weapons.",
-                                        "customDamageType": null,
-                                        "maxUseOverride": 0,
-                                        "uses": 0,
-                                        "selectedProfile": 0
-                                    }
+                                    "weapon": null
                                 }
                             ],
-                            "bonus_effects": [],
-                            "modifiable": true
-                        },
-                        {
-                            "mount_type": "Heavy",
-                            "lock": false,
-                            "slots": [
-                                {
-                                    "size": "Heavy",
-                                    "weapon": {
-                                        "id": "mw_heavy_charged_blade",
-                                        "destroyed": false,
-                                        "cascading": false,
-                                        "loaded": true,
-                                        "mod": null,
-                                        "flavorName": "",
-                                        "flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-II (T-2) line displays GMS’s proprietary “charged” melee weapons and energy weapons. T-2 charged melee weapons are structurally similar to GMS’s T-1 melee weapons, though built with different materials to tolerate the intense heat generated by their projected plasma sheaths. These sheaths can be toggled on or off, depending on the needs of the pilot. GMS’s T-2 energy weapons, like their T-1 kinetics, are sturdy tools with predictable power scaling, minimal particle scattering, and consistent performance ranges. They feature universal ports allowing them to accept a variety of power sources, from hardline cabling through to “magazine” style power packs",
-                                        "customDamageType": null,
-                                        "maxUseOverride": 0,
-                                        "uses": 0,
-                                        "selectedProfile": 0
-                                    }
-                                }
-                            ],
-                            "extra": [],
                             "bonus_effects": [],
                             "modifiable": true
                         }
@@ -264,16 +243,18 @@
         "core_uses": 0
     },
     "state": {
-        "active_mech_id": "",
+        "active_mech_id": "272b88ad-178d-4cef-bffa-e889f9151c2c",
         "remote_mech_id": "",
-        "stage": "Narrative",
-        "turn": 1,
+        "stage": "Combat",
+        "turn": 3,
+        "mission": 0,
         "actions": 2,
         "braced": false,
         "overcharged": false,
         "prepare": false,
         "bracedCooldown": false,
         "redundant": false,
+        "mounted": true,
         "stats": {
             "moves": 0,
             "kills": 0,
@@ -284,19 +265,21 @@
             "heat_damage": 0,
             "reactor_damage": 0,
             "overcharge_uses": 0,
-            "core_uses": 0
+            "core_uses": 1
         },
         "deployed": []
     },
-    "lastModified": "Sat May 10 2025 21:24:05 GMT-0500 (Central Daylight Time)",
+    "lastModified": "Wed May 14 2025 22:04:39 GMT-0400 (Eastern Daylight Saving Time)",
     "isDeleted": false,
     "expireTime": "",
     "deleteTime": "",
-    "lastUpdate_cloud": "",
-    "lastSync": "",
+    "lastUpdate_cloud": "Wed May 14 2025 16:09:27 GMT-0400 (Eastern Daylight Saving Time)",
+    "lastSync": "Wed May 14 2025 16:09:27 GMT-0400 (Eastern Daylight Saving Time)",
+    "shareCode": "C2L9F9",
+    "shareCodeExpiry": "Tue Aug 12 2025 16:09:35 GMT-0400 (Eastern Daylight Saving Time)",
     "skills": [
         {
-            "id": "sk_apply_fists_to_faces",
+            "id": "sk_act_unseen_or_unheard",
             "rank": 1
         },
         {
@@ -304,32 +287,32 @@
             "rank": 1
         },
         {
-            "id": "sk_get_somewhere_quickly",
+            "id": "sk_investigate",
             "rank": 1
         },
         {
-            "id": "sk_show_off",
+            "id": "sk_patch",
             "rank": 1
         }
     ],
     "talents": [
         {
-            "id": "t_brawler",
+            "id": "t_crack_shot",
             "rank": 1
         },
         {
-            "id": "t_duelist",
+            "id": "t_gunslinger",
             "rank": 1
         },
         {
-            "id": "t_pankrati",
+            "id": "t_legionnaire",
             "rank": 1
         }
     ],
     "mechSkills": [
-        1,
-        1,
         0,
+        0,
+        2,
         0
     ],
     "counter_data": [],
@@ -355,69 +338,45 @@
     "group": "",
     "sort_index": -1,
     "portrait": "",
-    "cloud_portrait": "https://d1nurxym97qk9o.cloudfront.net/public/us-east-1:e8136a89-be4a-475e-a2ca-2deca7c0c60f/pilot/INDIGO.png",
+    "cloud_portrait": "https://d1nurxym97qk9o.cloudfront.net/public/us-east-1:88c19765-1cf1-c13b-43db-990ec5c2dec0/pilot/Screenshot 2025-05-13 151343.jpg",
     "loadout": {
-        "id": "4ad22056-6ad5-445f-8eba-0cd0d308efd2",
+        "id": "74abafa5-c6de-4ddc-9d07-1f49b33802e3",
         "name": "Primary",
         "armor": [
             {
-                "id": "pg_light_hardsuit",
+                "id": "pg_mobility_hardsuit",
                 "destroyed": false,
                 "uses": 0,
                 "cascading": false,
                 "flavorName": "",
-                "flavorDescription": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
+                "flavorDescription": "",
                 "customDamageType": null
             }
         ],
         "weapons": [
+            null,
             {
-                "id": "pg_archaic_melee",
+                "id": "pg_archaic_ranged",
                 "destroyed": false,
                 "uses": 0,
                 "cascading": false,
                 "flavorName": "",
-                "flavorDescription": "These weapons were made using pre-Union alloys and technology, and might be anything from industrial-era steel swords through to stone axes. While they remain widely used on some worlds, archaic weapons used by pilots are usually relics, heirlooms, or ceremonial weapons.",
-                "customDamageType": null
-            },
-            {
-                "id": "pg_light_signature",
-                "destroyed": false,
-                "uses": 0,
-                "cascading": false,
-                "flavorName": "",
-                "flavorDescription": "Light signature weapons might be oversized revolvers, braces of pistols, and submachine guns.",
+                "flavorDescription": "These weapons are pre-modern devices like muskets and bows, all of which are still used in some societies.",
                 "customDamageType": null
             }
         ],
         "gear": [
             {
-                "id": "pg_dataplating",
+                "id": "pg_patch",
                 "destroyed": false,
-                "uses": 0,
+                "uses": 1,
                 "cascading": false,
                 "flavorName": "",
-                "flavorDescription": "Dataplating is a general term for any comm-linked jewelry, subdermal netting, wearable jaw, brow, or maxillary plates, etc., that allows subvocal communication and persistent heads-up and augmented reality displays without wearing a helm. Dataplates can quickly translate nearly any language, and allow users to communicate with each other all but silently.",
+                "flavorDescription": "“Patch” is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.",
                 "customDamageType": null
             },
-            {
-                "id": "pg_otyugh_generator",
-                "destroyed": false,
-                "uses": 0,
-                "cascading": false,
-                "flavorName": "",
-                "flavorDescription": "A design originally gifted to Ungrateful cells by an unknown benefactor, the OTYUGH-pattern portable generator takes a wide variety of fuels and converts them as efficiently as possible into energy. These generators are now standard equipment for far-field teams and are frequently found in other situations where a full-scale fusion core would be too bulky or conspicuous. The generator can power subalterns and other equipment for as long as it can be fed some kind of fuel – whether that be energy cells, fossil fuels, or even raw organic matter.",
-                "customDamageType": null
-            },
-            {
-                "id": "pg_mag_clamps",
-                "destroyed": false,
-                "uses": 0,
-                "cascading": false,
-                "flavorName": "",
-                "flavorDescription": "These clamps attach easily to any metal surface, enhancing maneuverability in zero-g environments or when repairing mechs. They can be carried or fitted to boots.",
-                "customDamageType": null
-            }
+            null,
+            null
         ],
         "extendedWeapons": [
             null
@@ -429,10 +388,16 @@
     },
     "brews": [
         {
-            "LcpId": "05B2PGxewZ193c4GaHDBoE2sl8U=",
-            "LcpName": "LANCER: Dustgrave",
-            "LcpVersion": "1.4.0",
-            "Website": "https://massif-press.itch.io/dustgrave"
+            "LcpId": "GWG3TKHfJGNXeO3U3Q+CgjhS/Os=",
+            "LcpName": "Operation Solstice Rain Data",
+            "LcpVersion": "1.2.0",
+            "Website": "https://massif-press.itch.io/operation-solstice-rain"
+        },
+        {
+            "LcpId": "cW6hD3ZhmxKJoQyudG6PRW9We9c=",
+            "LcpName": "GMS CRISIS CATALOG",
+            "LcpVersion": "2.7",
+            "Website": "https://esbionarshadow.itch.io/gms-crisis-catalogue"
         }
     ]
 }

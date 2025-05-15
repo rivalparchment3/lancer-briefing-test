@@ -8,53 +8,53 @@
 /*--       Theme Customization       --*/
 /*-------------------------------------*/
 :root {
-  /* Primary Colors */
-  --primary-color: #7dbbbb;
-  --secondary-color: #161c1dcc;
-  --highlight-hover: rgba(255, 255, 255, 0.3);
-  --highlight-active: rgba(255, 255, 255, 0.1);
-/* Primary Text */
-  --text-headers: rgba(0, 0, 0, 1);
-  --text-location: rgba(255, 255, 255, 0.87);
-/* Location Information */
-  --location-separator: rgba(255, 255, 255, 0.24);
-/* Mission Pane */
-  --text-mission-title: rgba(255, 255, 255, 0.67);
-  --text-mission-status: rgba(255, 255, 255, 0.87);
-  --mission-start: rgba(109, 109, 109, 1);
-  --mission-partial: rgba(88, 34, 102, 1);
-  --mission-success: #226662;
-  --mission-failure: rgba(176, 45, 45, 1);
---primary-logo:#0C3C40;
---secondary-logo: #146464;
-/* Pilot Roster Text */
-  --text-pilot-header: rgba(255, 255, 255, 0.67);
-  --text-pilot-value: rgba(255, 255, 255, 0.87);
-  --text-pilot-code: rgba(255, 255, 255, 0.47);
-/* Markdown (Current Assignment, Events Log, Pilot Biography) */
-  --text-markdown-p: rgba(255, 255, 255, 0.87);
-  --text-markdown-h1: rgba(255, 255, 255, 0.67);
-  --text-markdown-h2: rgba(255, 255, 255, 0.87);
+	/* Primary Colors */
+	--primary-color: #7dbbbb;
+	--secondary-color: #161c1dcc;
+	--highlight-hover: rgba(255, 255, 255, 0.3);
+	--highlight-active: rgba(255, 255, 255, 0.1);
+	/* Primary Text */
+	--text-headers: rgba(0, 0, 0, 1);
+	--text-location: rgba(255, 255, 255, 0.87);
+	/* Location Information */
+	--location-separator: rgba(255, 255, 255, 0.24);
+	/* Mission Pane */
+	--text-mission-title: rgba(255, 255, 255, 0.67);
+	--text-mission-status: rgba(255, 255, 255, 0.87);
+	--mission-start: rgba(109, 109, 109, 1);
+	--mission-partial: rgba(88, 34, 102, 1);
+	--mission-success: #226662;
+	--mission-failure: rgba(176, 45, 45, 1);
+	--primary-logo: #0C3C40;
+	--secondary-logo: #146464;
+	/* Pilot Roster Text */
+	--text-pilot-header: rgba(255, 255, 255, 0.67);
+	--text-pilot-value: rgba(255, 255, 255, 0.87);
+	--text-pilot-code: rgba(255, 255, 255, 0.47);
+	/* Markdown (Current Assignment, Events Log, Pilot Biography) */
+	--text-markdown-p: rgba(255, 255, 255, 0.87);
+	--text-markdown-h1: rgba(255, 255, 255, 0.67);
+	--text-markdown-h2: rgba(255, 255, 255, 0.87);
 
-  /* For Firefox */
-  scrollbar-color: var(--primary-color) transparent !important;
-  scrollbar-width: thin;
+	/* For Firefox */
+	scrollbar-color: var(--primary-color) transparent !important;
+	scrollbar-width: thin;
 }
 
 html {
-  overflow: overlay;
+	overflow: overlay;
 }
 
 /* Scroll bar stylings */
 ::-webkit-scrollbar {
-  overflow: overlay;
+	overflow: overlay;
 	width: 8px;
-  height: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar:hover {
-  background-color: var(--highlight-color);
-  scrollbar-color: var(--highlight-color) transparent !important;
+	background-color: var(--highlight-color);
+	scrollbar-color: var(--highlight-color) transparent !important;
 }
 
 /* Track */
@@ -91,10 +91,12 @@ header {
 	-moz-column-gap: 1em;
 	column-gap: 1em;
 }
+
 .title .title-container {
 	display: flex;
 	flex-direction: column;
 }
+
 .title #title-header {
 	font-size: 32px;
 	margin: 0%;
@@ -104,6 +106,7 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 }
+
 .title #title-subheader {
 	font-size: 32px;
 	margin: 0%;
@@ -114,6 +117,7 @@ header {
 	letter-spacing: 0.12em;
 	padding-left: 0.32em;
 }
+
 .title #subtitle-header {
 	font-size: 24px;
 	margin: 0%;
@@ -123,6 +127,7 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 }
+
 .title #subtitle-subheader {
 	font-size: 24px;
 	margin: 0%;
@@ -157,6 +162,7 @@ header {
 	display: inline-flex;
 	margin-left: -30px;
 }
+
 .rhombus-back {
 	transform: skew(0.785398rad) !important;
 	background-color: var(--primary-color);
@@ -331,17 +337,18 @@ section.section-container {
 	flex-direction: column;
 	margin: 50px 30px;
 	width: 393px;
-	height: 714px;
+	height: 100%;
 }
 
-section.section-container#assignment{
+section.section-container#assignment {
 	display: flex;
 	flex-direction: column;
 	width: 786px;
 	height: 714px;
 }
 
-section.section-container#reserves, section.section-container#clocks {
+section.section-container#reserves,
+section.section-container#clocks {
 	display: flex;
 	flex-direction: column;
 	margin: 30px 30px;
@@ -349,7 +356,7 @@ section.section-container#reserves, section.section-container#clocks {
 	height: 377px;
 }
 
-section.section-container#reserves{
+section.section-container#reserves {
 	margin-top: 15px;
 }
 
@@ -375,7 +382,7 @@ section.section-container#pilots {
 	flex-direction: column;
 	margin: 50px 30px;
 	width: 1755px;
-	height: 714px;
+
 }
 
 section.section-container#pilots .rhombus-back {
@@ -383,9 +390,7 @@ section.section-container#pilots .rhombus-back {
 	left: -2em;
 }
 
-.pilot-list-container {
-	height: 661px;
-}
+.pilot-list-container {}
 
 section .section-header {
 	background-color: var(--primary-color);
@@ -415,19 +420,20 @@ section .section-header h1 {
 }
 
 .section-content-container {
-	height: 666px;
+	height: 100%;
 	background: var(--secondary-color);
 	border: 1px solid var(--primary-color);
 	margin-top: -1px;
 	z-index: 0;
 	overflow: auto;
-  /* Firefox only */
-  scrollbar-width: thin;
+	/* Firefox only */
+	scrollbar-width: thin;
 }
 
-.section-content-container *:last-child{
+.section-content-container *:last-child {
 	border-bottom: none;
 }
+
 .section-content-container h3 {
 	color: var(--primary-color);
 	font-size: 18px;
@@ -446,43 +452,51 @@ section .section-header h1 {
 	height: 661px;
 	overflow: auto;
 }
+
 .clipped-medium-backward {
 	clip-path: polygon(0 0, calc(100% - 52px) 0, 100% 100%, 0% 100%);
 	-webkit-clip-path: polygon(0 0, calc(100% - 52px) 0, 100% 100%, 0% 100%);
 }
+
 .clipped-medium-backward-events-logs {
 	width: 452px;
 	clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
 	-webkit-clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
 	margin-right: 1em;
 }
+
 .clipped-medium-backward-pilot {
 	width: 452px;
 	clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
 	-webkit-clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
 	margin-right: 1em;
 }
+
 .clipped-medium-backward-mech {
 	width: 452px;
 	clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
 	-webkit-clip-path: polygon(0 0, 400px 0, 452px 100%, 0% 100%);
 	margin-right: 1em;
 }
+
 .clipped-medium-backward-bio {
 	width: 552px;
 	clip-path: polygon(0 0, 500px 0, 552px 100%, 0% 100%);
 	-webkit-clip-path: polygon(0 0, 500px 0, 552px 100%, 0% 100%);
 }
+
 .clipped-x-large-forward {
 	/* clip-path: polygon(100% 0, 100% calc(100% - 96px), calc(100% - 96px) 100%, 0 100%, 0 0);
 	-webkit-clip-path: polygon(100% 0, 100% calc(100% - 96px), calc(100% - 96px) 100%, 0 100%, 0 0); */
-  mask: url(/section-headers/clipped-forward.svg) no-repeat right;
-  -webkit-mask: url(/section-headers/clipped-forward.svg) no-repeat right;
+	mask: url(/section-headers/clipped-forward.svg) no-repeat right;
+	-webkit-mask: url(/section-headers/clipped-forward.svg) no-repeat right;
 }
+
 .clipped-rhombus-backward {
 	clip-path: polygon(0 0, 52px 52px, 104px 52px, 52px 0, 0 0);
 	-webkit-clip-path: polygon(0 0, 52px 52px, 104px 52px, 52px 0, 0 0);
 }
+
 .mission {
 	cursor: pointer;
 	font-size: 16px;
@@ -496,12 +510,14 @@ section .section-header h1 {
 	font-weight: 400;
 	display: flex;
 	align-items: center;
-  justify-content: center;
+	justify-content: center;
 	border-radius: 3px;
 }
+
 .mission .name {
 	flex-grow: 8;
 }
+
 .mission h1 {
 	margin: 0px;
 	margin-bottom: 0.25em;
@@ -513,6 +529,7 @@ section .section-header h1 {
 	letter-spacing: 3px;
 	color: var(--text-mission-title);
 }
+
 .mission h2 {
 	font-size: 18px;
 	margin: 0%;
@@ -523,6 +540,7 @@ section .section-header h1 {
 	letter-spacing: 0.1em;
 	color: var(--text-mission-status);
 }
+
 .mission .status {
 	display: flex;
 	align-items: center;
@@ -538,29 +556,36 @@ section .section-header h1 {
 	padding: 0.7em;
 	width: 150px;
 	color: var(--text-mission-status);
-  mask: url(/icons/mission-status.svg) no-repeat center;
-  -webkit-mask: url(/icons/mission-status.svg) no-repeat center;
+	mask: url(/icons/mission-status.svg) no-repeat center;
+	-webkit-mask: url(/icons/mission-status.svg) no-repeat center;
 }
+
 .mission .status img {
 	width: 32px;
 	height: 32px;
 	padding-left: 0.5em;
 }
+
 .mission .start {
 	background-color: var(--mission-start);
 }
+
 .mission .partial-success {
 	background-color: var(--mission-partial);
 }
+
 .mission .success {
 	background-color: var(--mission-success);
 }
+
 .mission .failure {
 	background-color: var(--mission-failure);
 }
+
 .mission.active {
 	background-color: var(--highlight-active);
 }
+
 .mission:hover {
 	background-color: var(--highlight-hover) !important;
 	padding-left: 1em;
@@ -672,8 +697,8 @@ section .section-header h1 {
 }
 
 .pilot-wrapper {
-  align-items: center;
-  padding: 1em 0em 1em 0em;
+	align-items: center;
+	padding: 1em 0em 1em 0em;
 	display: flex;
 	flex-direction: row;
 	height: 31%;
@@ -688,16 +713,17 @@ section .section-header h1 {
 	display: flex;
 	flex-direction: row;
 	margin: 0em 1em 0em 1em;
-  column-gap: 0.5em;
+	column-gap: 0.5em;
 }
 
 .pilot-wrapper .pilot-column {
 	column-gap: 1em;
-  cursor: pointer;
+	cursor: pointer;
+	padding: 0.25em;
 }
+
 .pilot-wrapper .pilot-column:hover {
 	background-color: var(--highlight-hover) !important;
-	padding-top: 1em;
 }
 
 .pilot-wrapper .pilot-column .pilot-info {
@@ -758,6 +784,7 @@ section .section-header h1 {
 	margin-right: 2px;
 	height: 22px;
 }
+
 .item:first-child {
 	border-top-left-radius: 11px;
 	border-bottom-left-radius: 11px;
@@ -772,7 +799,7 @@ section .section-header h1 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 0.5em;
-  max-width: 15em;
+	max-width: 15em;
 	flex-grow: 2;
 }
 
@@ -780,8 +807,8 @@ section .section-header h1 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 0.5em;
-  max-width: 15em;
-  flex-grow: 1;
+	max-width: 15em;
+	flex-grow: 1;
 }
 
 .pilot-wrapper .bonds-column {
@@ -841,12 +868,14 @@ section .section-header h1 {
 .pilot-wrapper .mech-column {
 	border-right: 0px solid transparent;
 	column-gap: 2em;
-  flex-grow: 0.3;
-  cursor: pointer;
+	flex-grow: 0.3;
+	cursor: pointer;
+	padding: 0.25em;
 }
+
 .pilot-wrapper .mech-column:hover {
-  background-color: var(--highlight-hover) !important;
-	padding-top: 1em;
+	background-color: var(--highlight-hover) !important;
+
 }
 
 .pilot-wrapper .mech-column .mech-info {
@@ -880,10 +909,11 @@ section .section-header h1 {
 	border-bottom: none;
 }
 
-.o-modal > div:nth-child(2) {
+.o-modal>div:nth-child(2) {
 	display: flex;
 	gap: 5em;
 }
+
 .pilot-modal {
 	position: relative;
 }
@@ -891,6 +921,7 @@ section .section-header h1 {
 .pilot-modal .pilot-header-container {
 	display: flex;
 }
+
 .pilot-modal div .section-header {
 	background-color: var(--primary-color);
 	border-color: var(--primary-color);
@@ -900,6 +931,7 @@ section .section-header h1 {
 	padding-left: 16px;
 	margin-top: -38px !important;
 }
+
 .pilot-modal div .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
@@ -909,6 +941,7 @@ section .section-header h1 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
+
 .pilot-modal .rhombus-back {
 	transform: skew(0.785398rad) !important;
 	background-color: var(--primary-color);
@@ -920,6 +953,7 @@ section .section-header h1 {
 	left: -10px;
 	top: -38px;
 }
+
 .pilot-modal div.pilot {
 	background-color: var(--secondary-color);
 	border: 1px solid var(--primary-color);
@@ -927,12 +961,15 @@ section .section-header h1 {
 	width: 888px;
 	height: 662px;
 }
+
 .pilot-modal div.pilot div.markdown {
 	height: 662px;
 }
+
 .pilot-modal.portrait .pilot {
 	width: 600px;
 }
+
 .pilot-modal.portrait img.portrait {
 	width: 100%;
 	height: 100%;
@@ -940,9 +977,11 @@ section .section-header h1 {
 	object-position: top;
 	overflow: clip;
 }
+
 .pilot-modal.portrait .pilot-header-container {
 	display: flex;
 }
+
 .pilot-modal.portrait .rhombus-back {
 	left: -25px;
 }
@@ -950,14 +989,17 @@ section .section-header h1 {
 .mech-modal {
 	position: relative;
 }
+
 .mech-modal .clipped-medium-backward-bio {
 	width: 582px;
 	clip-path: polygon(0 0, 530px 0, 582px 100%, 0% 100%);
 	-webkit-clip-path: polygon(0 0, 530px 0, 582px 100%, 0% 100%);
 }
+
 .mech-modal .mech-header-container {
 	display: flex;
 }
+
 .mech-modal div .section-header {
 	background-color: var(--primary-color);
 	border-color: var(--primary-color);
@@ -967,6 +1009,7 @@ section .section-header h1 {
 	padding-left: 16px;
 	margin-top: -38px !important;
 }
+
 .mech-modal div .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
@@ -976,6 +1019,7 @@ section .section-header h1 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
+
 .mech-modal .rhombus-back {
 	transform: skew(0.785398rad) !important;
 	background-color: var(--primary-color);
@@ -987,9 +1031,11 @@ section .section-header h1 {
 	left: -10px;
 	top: -38px;
 }
+
 .mech-modal div.mech-gear {
-  border-bottom: 1px solid var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
+
 .mech-modal div.mech {
 	background-color: var(--secondary-color);
 	border: 1px solid var(--primary-color);
@@ -999,12 +1045,15 @@ section .section-header h1 {
 	display: flex;
 	flex-direction: column;
 }
+
 .mech-modal div.mech div.markdown {
 	height: 100%;
 }
+
 .mech-modal.portrait .mech {
 	width: 600px;
 }
+
 .mech-modal.portrait img.portrait {
 	width: 100%;
 	height: 100%;
@@ -1012,12 +1061,15 @@ section .section-header h1 {
 	object-position: top;
 	overflow: hidden;
 }
+
 .mech-modal.portrait .mech-header-container {
 	display: flex;
 }
+
 .mech-modal.portrait .rhombus-back {
 	left: -25px;
 }
+
 .mech h1 {
 	font-size: 12px;
 	font-weight: 400;
@@ -1027,6 +1079,7 @@ section .section-header h1 {
 	text-transform: uppercase;
 	color: var(--text-pilot-header);
 }
+
 .mech h2 {
 	font-size: 18px;
 	font-weight: 700;
@@ -1036,27 +1089,32 @@ section .section-header h1 {
 	text-transform: uppercase;
 	color: var(--text-pilot-value);
 }
+
 .mech-modal .mech-column {
 	display: flex;
 	flex-direction: row;
 }
+
 .mech-column .gear-row {
-  display: flex;
+	display: flex;
 	flex-direction: column;
-  row-gap: 0.5em;
-  column-gap: 2em;
-  padding: 1em 0em 1em 1em;
-  flex-grow: 1;
+	row-gap: 0.5em;
+	column-gap: 2em;
+	padding: 1em 0em 1em 1em;
+	flex-grow: 1;
 	/* width: 50%; */
 }
+
 .mech-column .gear-row.mech-system {
-  flex-direction: row;
-  flex-grow: 0.8;
-  padding: 0em 1em 1em 1em;
+	flex-direction: row;
+	flex-grow: 0.8;
+	padding: 0em 1em 1em 1em;
 }
+
 .mech-column div.no-systems {
-  padding: 1em 1em 1em 1em;
+	padding: 1em 1em 1em 1em;
 }
+
 /* for Pilot view typing animation */
 .is-typed span.cursor {
 	display: inline-block;
@@ -1071,6 +1129,7 @@ section .section-header h1 {
 .event-modal .pilot-header-container {
 	display: flex;
 }
+
 .event-modal div .section-header {
 	background-color: var(--primary-color);
 	border-color: var(--primary-color);
@@ -1080,6 +1139,7 @@ section .section-header h1 {
 	padding-left: 16px;
 	margin-top: -38px !important;
 }
+
 .event-modal div .section-header h1 {
 	font-size: 26px;
 	margin: 0%;
@@ -1089,6 +1149,7 @@ section .section-header h1 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
+
 .event-modal .rhombus-back {
 	transform: skew(0.785398rad) !important;
 	background-color: var(--primary-color);
@@ -1100,6 +1161,7 @@ section .section-header h1 {
 	left: -10px;
 	top: -38px;
 }
+
 .event-modal div.event {
 	background-color: var(--secondary-color);
 	border: 1px solid var(--primary-color);
@@ -1122,9 +1184,11 @@ section .section-header h1 {
 	top: 0;
 	background-color: rgba(10, 10, 10, 0.7);
 }
+
 .o-tip__arrow {
 	color: var(--primary-color);
 }
+
 .o-tip__content {
 	font-family: "Inconsolata", monospace;
 	font-weight: 400;
@@ -1139,14 +1203,17 @@ section .section-header h1 {
 }
 
 .person-list-container {
-	height: 666px;
+	height: 100%;
 }
+
 .person-list-container .person {
 	border-bottom: var(--primary 1px solid);
 }
+
 .person-list-container .person:last-child {
 	border-bottom: none;
 }
+
 .person {
 	display: flex;
 	flex-direction: row;
@@ -1157,18 +1224,21 @@ section .section-header h1 {
 	border-bottom: none;
 	z-index: 1;
 }
+
 .person .person-loadout {
 	width: 300px;
 	display: flex;
 	flex-direction: column;
 	row-gap: 0px;
 }
+
 .person .person-portrait {
 	width: 104px;
 	height: 136px;
 	-o-object-fit: cover;
 	object-fit: cover;
 }
+
 .person h1 {
 	margin: 0px;
 	margin-bottom: 0.25em;
@@ -1180,6 +1250,7 @@ section .section-header h1 {
 	letter-spacing: 3px;
 	color: var(--text-pilot-header);
 }
+
 .person h2 {
 	font-size: 18px;
 	margin: 0%;
@@ -1191,6 +1262,7 @@ section .section-header h1 {
 	letter-spacing: 0.1em;
 	color: var(--text-pilot-value);
 }
+
 .person .code {
 	font-family: "Inconsolata", monospace;
 	font-weight: 400;
@@ -1304,12 +1376,12 @@ div.markdown {
 	border-bottom: 1px solid var(--primary-color);
 	height: 350px;
 	overflow: auto;
-  /* For Firefox */
-  scrollbar-width: thin;
+	/* For Firefox */
+	scrollbar-width: thin;
 }
 
 #assignment div.markdown {
-	height:100%;
+	height: 100%;
 	padding-top: 1em;
 	padding-left: 2em;
 	padding-right: 2em;
@@ -1317,7 +1389,7 @@ div.markdown {
 
 
 .event div.markdown {
-	height:100%;
+	height: 100%;
 }
 
 div.markdown p {
@@ -1349,6 +1421,7 @@ div.markdown h1 {
 	letter-spacing: 3px;
 	color: var(--text-markdown-h1);
 }
+
 div.markdown h2 {
 	font-size: 18px;
 	margin: 0%;
@@ -1360,6 +1433,7 @@ div.markdown h2 {
 	letter-spacing: 0.1em;
 	color: var(--text-markdown-h2);
 }
+
 div.markdown ul {
 	display: block;
 	list-style-type: disc;
@@ -1376,6 +1450,7 @@ div.markdown ul {
 	margin-bottom: 1em;
 	list-style-image: url("/bullet.webp");
 }
+
 div.markdown ol {
 	display: block;
 	-webkit-margin-before: 0.25em;
@@ -1390,27 +1465,33 @@ div.markdown ol {
 	padding-inline-start: 20px;
 	margin-bottom: 1em;
 }
+
 div.markdown ol li {
 	margin-bottom: 0.5em;
 }
+
 #missions .markdown {
 	height: 350px;
 }
+
 #events .markdown {
 	height: 666px;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	border-bottom: none;
 }
+
 .person .markdown {
 	width: 350px;
 	height: 136px;
 	border-bottom: none;
 }
+
 .glossary-container .markdown {
 	height: 666px;
 	border-bottom: none;
 }
+
 .glossary-container .markdown strong {
 	text-transform: uppercase;
 }
