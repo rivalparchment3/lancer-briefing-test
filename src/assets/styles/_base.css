@@ -1497,8 +1497,8 @@ div.markdown ol li {
 }
 
 .pilot-identity {
-	width: 1000px;
-	height: 650px;
+	width: 1050px;
+	height: 600px;
 }
 
 .pilot-identity .header {
@@ -1608,6 +1608,7 @@ div.markdown ol li {
 	flex-grow:1;
 	display:flex;
 	flex-direction: row;
+	padding-top: 0.5em;
 }
 
 .pilot-identity .biometrics {

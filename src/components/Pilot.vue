@@ -220,6 +220,9 @@ export default {
     skills() {
       return [...lancerData.skills]    
     },
+    frames() {
+      return [...lancerData.frames, ...ktbData.frames, ...nrfawData.frames, ...longrimData.frames, ...dustgraveData.frames, ...gmsCrisisData.frames, ...legionnaireData.frames, ...solsticeRainData.frames, ...sirensSongData.frames, ...enhancedCombatData.frames, ...shadowOfTheWolfData.frames, winterScarData.frames]
+    },
     mechManufacturerIcon() {
       if (this.activeMech.manufacturer)
         return `/faction-logos/${this.activeMech.manufacturer.toLowerCase()}.svg`
@@ -299,6 +302,7 @@ export default {
           pilot: this.pilot,
           talents: this.talents,
           skills: this.skills,
+          frames: this.frames,
         },
         class: 'custom-modal',
         width: 1920,

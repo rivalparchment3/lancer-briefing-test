@@ -40,10 +40,10 @@
 								OMNINET VAULT REMIT)</span></div>
 						<div class="row" style="padding-top:5px"><span
 								style="font-size: 22px; line-height: 15px;"> [
-								HULL: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[0] }} </span> AGI:
-								<span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[1] }}  </span> SYS: <span
-									class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[2] }}  </span> ENG: <span
-									class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[3] }} </span> ] </span></div>
+								HULL: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[0] }} </span> 
+								AGI: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[1] }} </span> 
+								SYS: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[2] }} </span> 
+								ENG: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[3] }} </span> ] </span></div>
 						<div class="row flex-container-cols">
 							<div class="col col-share" style="padding-top:5px">
 								<span>PILOT SKILL TRIGGER AUDIT</span>
@@ -60,10 +60,19 @@
 								</div>
 							</div>
 						</div>
+						<div v-if="pilot.level > 0" class="row flex-container-cols">
+							<div class="col" style="padding-top:5px">
+								<span>PROCUREMENT LICENSE AUDIT: LEVEL {{ pilot.level }}</span>
+								<br>
+								<div class="chip-container" v-for="license in pilot.licenses" :key="license.id">						
+									<span class="chip">{{ getLicense(license.id, license.rank) }}</span>
+								</div>
+							</div>
+						</div>
 						<div class="row biometrics-container">
 							<div class="biometrics"><i aria-hidden="true"
 									class="v-icon notranslate mdi mdi-fingerprint theme--dark grey--text text--darken-2"
-									style="font-size: 36px; margin-top:1em;"></i> BIOMETRIC RECORD VALID [[14.92PB]] ::
+									style="font-size: 36px; margin-top:1em;"></i> BIOMETRIC RECORD VALID [[{{randomNumber(14,22)}}PB]] ::
 								OHM
 								C//{{ timeStamp(pilot.lastModified) }}</div>
 						</div>
@@ -115,6 +124,10 @@ export default {
 		talents: {
 			type: Array,
 			required:true
+		},
+		frames: {
+			type: Array,
+			required:true
 		}
 	},
 	data() {
@@ -163,6 +176,15 @@ export default {
 			}
 			return response;
 		},
+		getLicense(id, value) {
+			var frame = this.frames.find((x) => x.id == id);
+			var response = frame.source + " " + frame.name + " "
+			
+			for (var i = 0; i < value; i++){
+				response += "I"
+			}
+			return response;
+		},
 		capitalize(str) {
 			return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 		},
@@ -171,6 +193,11 @@ export default {
 			const reversed = words.reverse()
 			const reversedResult = words.join('.')
 			return reversedResult
+		},
+		randomNumber(max, min) {
+			const rand = Math.random() * (max - min) + min
+			const power = Math.pow(10, 2)
+			return Math.floor(rand * power) / power
 		},
 		timeStamp(str) {
 			var date = new Date(str);
