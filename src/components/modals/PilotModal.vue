@@ -49,14 +49,14 @@
 								<span>PILOT SKILL TRIGGER AUDIT</span>
 								<br>
 								<div class="chip-container" v-for="skill in pilot.skills" :key="skill.id">						
-									<span class="chip">{{ getSkill(skill.id) }}</span>
+									<span class="chip"><i aria-hidden="true" class="notranslate cci cci-skill"></i>{{ getSkill(skill.id) }}</span>
 								</div>
 							</div>
 							<div class="col col-share">
 								<span>PILOT TALENT AUDIT</span>
 								<br>
 								<div class="chip-container" v-for="talent in pilot.talents" :key="talent.id">						
-									<span class="chip">{{ getTalent(talent.id, talent.rank) }}</span>
+									<span class="chip"><i aria-hidden="true" class="notranslate cci cci-talent"></i>{{ getTalent(talent.id, talent.rank) }}</span>
 								</div>
 							</div>
 						</div>
@@ -65,7 +65,7 @@
 								<span>PROCUREMENT LICENSE AUDIT: LEVEL {{ pilot.level }}</span>
 								<br>
 								<div class="chip-container" v-for="license in pilot.licenses" :key="license.id">						
-									<span class="chip">{{ getLicense(license.id, license.rank) }}</span>
+									<span class="chip"><i aria-hidden="true" class="notranslate cci cci-license"></i>{{ getLicense(license.id, license.rank) }}</span>
 								</div>
 							</div>
 						</div>
