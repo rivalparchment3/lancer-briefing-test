@@ -27,8 +27,8 @@
 					{{ reverse(pilot.name) }}:{{ pilot.id }}//NDL-C-BLIND-REACH
 				</div>
 				<div class="row flex-container-cols add-padding">
-					<div class="col grow-max flex-container-rows">
-						<div class="row flex-container-cols" style="padding-top:5px">
+					<div class="col grow-max flex-container-rows" style="padding-top:5px">
+						<div class="row flex-container-cols" >
 							<div class="col col-primary"><span class="flavor-text"> Callsign: <b class="accent--text">{{
 								capitalize(pilot.callsign) }}</b><br> Name (or legal alias): <b
 										class="accent--text">{{ pilot.name }}</b><br> Background: <b
@@ -45,7 +45,7 @@
 								SYS: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[2] }} </span> 
 								ENG: <span class="stat-text accent--text" style="font-size: 24px;"> {{ pilot.mechSkills[3] }} </span> ] </span></div>
 						<div class="row flex-container-cols">
-							<div class="col col-share" style="padding-top:5px">
+							<div class="col col-share">
 								<span>PILOT SKILL TRIGGER AUDIT</span>
 								<br>
 								<div class="chip-container" v-for="skill in pilot.skills" :key="skill.id">						
