@@ -16,7 +16,7 @@
               <h2>{{ mainMount.flavorName }}</h2>
             </div>
           </div>
-          <div v-if="flexMounts.length > 0" class="gear-row mech-mount">
+          <div v-if="flexMounts.length > 0 && flexMounts.some(element => element.id !== null)" class="gear-row mech-mount">
             <div v-for="flexMount in flexMounts" class="flex-mount">
               <h1>Flex Mount</h1>
               <h2>{{ flexMount.flavorName }}</h2>
@@ -131,22 +131,26 @@ export default {
       var resolveMountSlots = (type, item, idx, arr) => {
         item = item || {id: "", flavorName: ""}
         const mountObj = this.weaponsData.find((obj) => { return item.id === obj.id }) || null
-        item.flavorName = mountObj?.name || "ERR: DATA NOT FOUND";
+        item.flavorName = mountObj?.name || "";
 
         switch (type) {
           case 'Main':
+            if (item.id == "") break;
             this.mainMounts = [...this.mainMounts, item];
             break;
           case 'Flex':
+            if (item.id == "") break;
             this.flexMounts = [...this.flexMounts, item];
             break;
           // case "Auxiliary":
           //   this.mainMounts = [...this.mainMounts, item];
           //   break;
           case 'Heavy':
+            if (item.id == "") break;
             this.heavyMounts = [...this.heavyMounts, item];
             break;
           default:
+            if (item.id == "") break;
             this.mainMounts = [...this.mainMounts, item];
             break;
         }

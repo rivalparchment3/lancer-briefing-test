@@ -958,7 +958,7 @@ section .section-header h1 {
 	background-color: var(--secondary-color);
 	border: 1px solid var(--primary-color);
 	margin-top: -38px;
-	width: 888px;
+	width: 608px;
 	height: 662px;
 }
 
@@ -1493,5 +1493,128 @@ div.markdown ol li {
 }
 
 .glossary-container .markdown strong {
+	text-transform: uppercase;
+}
+
+.pilot-identity {
+	width: 1000px;
+	height: 650px;
+}
+
+.pilot-identity .header {
+	background: var(--primary-color);
+	color: var(--text-headers);
+	font-size: 32px;
+	margin: 0%;
+	align-self: center;
+	font-family: "Big Shoulders Display", cursive;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding:0.5em;
+	display:flex;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+.pilot-identity .col.grow-max {
+	flex-grow:100;
+}
+
+.pilot-identity .header .col img {
+	float:right;
+	height:84px;
+	width: 84px;
+}
+
+.pilot-identity .body {
+	border: 5px double var(--primary-color) !important;
+	border-top: 0px !important;
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	background-color: rgba(22, 28, 29, 1);
+	font-family: "Inconsolata", monospace;
+	font-weight: 400;
+	line-height: 1.25em;
+	font-size: 16px;
+	color: var(--text-pilot-code);
+}
+
+.pilot-identity .body .add-padding {
+	padding:0px 8px;
+}
+
+.pilot-identity .flex-container-rows {
+	display:flex;
+	flex-direction: column;
+}
+
+.pilot-identity .flex-container-cols {
+	display:flex;
+	flex-direction: row;
+}
+
+.pilot-identity .col.col-primary {
+	flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+}
+
+.pilot-identity .col.col-share {
+	flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.pilot-identity .stat-text, .pilot-identity .accent--text{
+	color: var(--primary-color)
+}
+
+.pilot-identity .chip-container {
+	display:inline;
+}
+
+.pilot-identity .chip {
+  border: 1px solid var(--primary-color);
+  padding: 4px;
+  margin: 4px;
+  line-height: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pilot-identity .pilot-image-container {
+	width: 250px;
+	margin-right: 1em;
+}
+
+.pilot-identity .pilot-image-border {
+	border: 5px double var(--primary-color);
+  	border-radius: 2px;
+	width: 250px;
+	height: 250px;
+}
+
+.pilot-identity .pilot-image-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.pilot-identity .biometrics-container {
+	flex-grow:1;
+	display:flex;
+	flex-direction: row;
+}
+
+.pilot-identity .biometrics {
+	align-self: flex-end;
+}
+
+.pilot-identity .overline{
+	font-size: 11px;
 	text-transform: uppercase;
 }

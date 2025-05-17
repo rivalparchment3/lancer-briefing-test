@@ -214,6 +214,12 @@ export default {
     mechSystems() {
       return [...lancerData.systems, ...ktbData.systems, ...nrfawData.systems, ...longrimData.systems, ...dustgraveData.systems, ...gmsCrisisData.systems, ...legionnaireData.systems, ...solsticeRainData.systems, ...sirensSongData.systems, ...enhancedCombatData.systems, ...shadowOfTheWolfData.systems, winterScarData.systems]
     },
+    talents() {
+      return [...lancerData.talents, ...ktbData.talents, ...nrfawData.talents, ...longrimData.talents, ...dustgraveData.talents, ...solsticeRainData.talents, ...legionnaireData.talents, ...sirensSongData.talents]
+    },
+    skills() {
+      return [...lancerData.skills]    
+    },
     mechManufacturerIcon() {
       if (this.activeMech.manufacturer)
         return `/faction-logos/${this.activeMech.manufacturer.toLowerCase()}.svg`
@@ -291,6 +297,8 @@ export default {
         trapFocus: true,
         props: {
           pilot: this.pilot,
+          talents: this.talents,
+          skills: this.skills,
         },
         class: 'custom-modal',
         width: 1920,

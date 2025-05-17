@@ -2,13 +2,15 @@
 import f from "./frames.json"
 import s from "./systems.json"
 import w from "./weapons.json"
-
+import t from "./talents.json"
+import { talents } from "lancer-data"
 
 const data = {
   frames: f,
   pilot_gear: [],
   systems: s,
   weapons: w,
+  talents: t,
 }
 
 export default data;
