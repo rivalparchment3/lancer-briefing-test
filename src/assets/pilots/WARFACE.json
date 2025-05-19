@@ -43,7 +43,7 @@
             "reactor_destroyed": false,
             "core_active": false,
             "cc_ver": "ERR",
-            "lastModified": "Wed May 14 2025 22:05:07 GMT-0300 (Atlantic Daylight Time)",
+            "lastModified": "Mon May 19 2025 16:14:32 GMT-0300 (Atlantic Daylight Time)",
             "isDeleted": false,
             "expireTime": "",
             "deleteTime": "",
@@ -71,20 +71,20 @@
                             "flavorDescription": "The use of turret drones is a rather traditional form of force multiplication – one that has remained the backbone of defense in many theaters."
                         },
                         {
-                            "id": "ms_stable_structure",
-                            "uses": 0,
-                            "destroyed": false,
-                            "cascading": false,
-                            "flavorName": "",
-                            "flavorDescription": ""
-                        },
-                        {
                             "id": "ms_manipulators",
                             "uses": 0,
                             "destroyed": false,
                             "cascading": false,
                             "flavorName": "",
                             "flavorDescription": "Precise interaction with built and natural environments, soft targets, and hazardous materials is part of the daily routine for support-class mechs. This is made possible by manipulators – added multi-digit “hands” with haptic sensors."
+                        },
+                        {
+                            "id": "ms_pattern_b_hex_charges",
+                            "uses": 3,
+                            "destroyed": false,
+                            "cascading": false,
+                            "flavorName": "",
+                            "flavorDescription": ""
                         }
                     ],
                     "integratedSystems": [],
@@ -268,14 +268,14 @@
         },
         "deployed": []
     },
-    "lastModified": "Wed May 14 2025 22:10:27 GMT-0300 (Atlantic Daylight Time)",
+    "lastModified": "Mon May 19 2025 16:15:40 GMT-0300 (Atlantic Daylight Time)",
     "isDeleted": false,
     "expireTime": "",
     "deleteTime": "",
-    "lastUpdate_cloud": "Tue May 13 2025 13:41:15 GMT-0300 (Atlantic Daylight Time)",
-    "lastSync": "Tue May 13 2025 13:41:15 GMT-0300 (Atlantic Daylight Time)",
-    "shareCode": "3SPC6A",
-    "shareCodeExpiry": "Mon Aug 11 2025 13:41:21 GMT-0300 (Atlantic Daylight Time)",
+    "lastUpdate_cloud": "Mon May 19 2025 16:15:34 GMT-0300 (Atlantic Daylight Time)",
+    "lastSync": "Mon May 19 2025 16:15:34 GMT-0300 (Atlantic Daylight Time)",
+    "shareCode": "2O6HB6",
+    "shareCodeExpiry": "Sun Aug 17 2025 16:15:40 GMT-0300 (Atlantic Daylight Time)",
     "skills": [
         {
             "id": "sk_assault",
