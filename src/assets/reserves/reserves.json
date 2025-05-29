@@ -1,11 +1,2 @@
 [
-	{
-		"type": "UTILITY",
-		"name": "Anchor Arm",
-		"description": "A bulky and well-worn prosthetic arm, obviously artificial. The word “KILL” is scratched, letter by letter, into the knuckles. A repossession notice is attached to it and dried blood still covers some of the ports where the arm would attach to a human.",
-		"label": "Label",
-		"cost": "Cost",
-		"notes": "Notes",
-		"callsign": "INDIGO"
-	}
 ]
