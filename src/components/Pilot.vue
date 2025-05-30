@@ -203,10 +203,10 @@ export default {
   },
   computed: {
     pilotPortrait() {
-      return `/pilots/${this.pilot.callsign}.webp`
+      return `/pilots/${this.pilot.callsign.toUpperCase()}.webp`
     },
     mechPortrait() {
-      return `/mechs/${this.pilot.callsign}.webp`
+      return `/mechs/${this.pilot.callsign.toUpperCase()}.webp`
     },
     mechWeapons() {
       return [...lancerData.weapons, ...ktbData.weapons, ...nrfawData.weapons, ...longrimData.weapons, ...dustgraveData.weapons, ...gmsCrisisData.weapons, ...legionnaireData.weapons, ...solsticeRainData.weapons, ...sirensSongData.weapons, ...enhancedCombatData.weapons, ...shadowOfTheWolfData.weapons, winterScarData.weapons]

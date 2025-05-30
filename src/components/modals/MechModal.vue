@@ -116,10 +116,10 @@ export default {
   },
   computed: {
     pilotPortrait() {
-      return `/pilots/${this.pilot.callsign}.webp`
+      return `/pilots/${this.pilot.callsign.toUpperCase()}.webp`
     },
     mechPortrait() {
-      return `/mechs/${this.pilot.callsign}.webp`
+      return `/mechs/${this.pilot.callsign.toUpperCase()}.webp`
     },
   },
   methods: {

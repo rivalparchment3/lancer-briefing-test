@@ -51,8 +51,8 @@ export default {
 	},
 	created() {
 		this.setTitleFavicon(Config.defaultTitle + " MISSION BRIEFING", Config.icon);
-		this.importMissions(import.meta.glob("@/assets/missions/*.md", { as: "raw" }));
-		this.importEvents(import.meta.glob("@/assets/events/*.md", { as: "raw" }));
+		this.importMissions(import.meta.glob("@/assets/missions/*.md", { query: '?raw', import: 'default' }));
+		this.importEvents(import.meta.glob("@/assets/events/*.md", { query: '?raw', import: 'default' }));
 		this.importClocks(import.meta.glob("@/assets/clocks/*.json"));
 		this.importReserves(import.meta.glob("@/assets/reserves/*.json"));
 		this.importPilots(import.meta.glob("@/assets/pilots/*.json"));

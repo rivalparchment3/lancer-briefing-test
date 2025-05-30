@@ -647,7 +647,7 @@ section .section-header h1 {
 .reserves-list-container {
 	display: flex;
 	flex-direction: column;
-	height: 340px;
+	height: 330px;
 }
 
 .reserve {
@@ -1281,7 +1281,7 @@ section .section-header h1 {
 .clocks-list-container {
 	display: flex;
 	flex-direction: column;
-	height: 340px;
+	height: 330px;
 }
 
 .clock-container {
