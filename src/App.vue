@@ -116,12 +116,12 @@ export default {
 			let filePromises = Object.keys(files).map(path => files[path]());
 			let fileContents = await Promise.all(filePromises);
 			fileContents.forEach(content => {
-				var pilotFromJson = JSON.parse(JSON.stringify(content));
+				let pilotFromJson = JSON.parse(JSON.stringify(content));
 				// In case the pilot was added from a copy on compcon via sharecode, remove the "reference mark" symbol
 				pilotFromJson.name = pilotFromJson.name.replace("※", "");
 				pilotFromJson.callsign = pilotFromJson.callsign.replace("※", "");
-				var pilotFromVue = this.pilotSpecialInfo[pilotFromJson.callsign.toUpperCase()];
-				var pilot = {
+				let pilotFromVue = this.pilotSpecialInfo[pilotFromJson.callsign.toUpperCase()];
+				let pilot = {
 					...pilotFromJson,
 					...pilotFromVue,
 				};

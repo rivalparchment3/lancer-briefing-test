@@ -36,7 +36,7 @@ export default {
 	},
 	computed: {
 		ownerImage() {
-			var pilot = this.pilots.find(obj => {
+			let pilot = this.pilots.find(obj => {
 				return obj.callsign.toUpperCase() == this.reserve.callsign.toUpperCase();
 			});
 

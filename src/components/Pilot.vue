@@ -242,7 +242,7 @@ export default {
     pilotInfo() {
       const info = this.pilot
 
-      var resolveGear = (type, item, idx, arr) => {
+      let resolveGear = (type, item, idx, arr) => {
         item = item || {id: "", flavorName: ""};
         const gear = this.knownGear.find((obj) => { return item.id === obj.id }) || null;
         item.flavorName = gear?.name || "ERR: DATA NOT FOUND";

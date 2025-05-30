@@ -122,7 +122,7 @@ export default {
 	methods: {
 		selectMission(slug) {
 			this.missionSlug = slug;
-			var m = this.missions.find(x => x.slug === this.missionSlug);
+			let m = this.missions.find(x => x.slug === this.missionSlug);
 			this.missionMarkdown = m.content;
 		},
 		setAnimate() {

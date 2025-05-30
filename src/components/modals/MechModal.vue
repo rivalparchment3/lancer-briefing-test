@@ -128,7 +128,7 @@ export default {
       this.activeLoadout = this.mech.loadouts[activeLoadoutIdx]
     },
     getMechMounts() {
-      var resolveMountSlots = (type, item, idx, arr) => {
+      let resolveMountSlots = (type, item, idx, arr) => {
         item = item || {id: "", flavorName: ""}
         const mountObj = this.weaponsData.find((obj) => { return item.id === obj.id }) || null
         item.flavorName = mountObj?.name || "";
@@ -170,7 +170,7 @@ export default {
       })
     },
     getMechSystems() {
-      var resolveMechSystems = (item, idx, arr) => {
+      let resolveMechSystems = (item, idx, arr) => {
         item = item || {id: "", flavorName: ""}
         const mountObj = this.systemsData.find((obj) => { return item.id === obj.id }) || null
         item.flavorName = mountObj?.name || "ERR: DATA NOT FOUND";

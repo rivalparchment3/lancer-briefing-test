@@ -164,23 +164,23 @@ export default {
 			return response;
 		},
 		getSkill(id) {
-			var skill = this.skills.find((x) => x.id == id);
+			let skill = this.skills.find((x) => x.id == id);
 			return skill.name
 		},
 		getTalent(id, value) {
-			var talent = this.talents.find((x) => x.id == id);
-			var response = talent.name + " "
+			let talent = this.talents.find((x) => x.id == id);
+			let response = talent.name + " "
 			
-			for (var i = 0; i < value; i++){
+			for (let i = 0; i < value; i++){
 				response += "I"
 			}
 			return response;
 		},
 		getLicense(id, value) {
-			var frame = this.frames.find((x) => x.id == id);
-			var response = frame.source + " " + frame.name + " "
+			let frame = this.frames.find((x) => x.id == id);
+			let response = frame.source + " " + frame.name + " "
 			
-			for (var i = 0; i < value; i++){
+			for (let i = 0; i < value; i++){
 				response += "I"
 			}
 			return response;
@@ -200,15 +200,15 @@ export default {
 			return Math.floor(rand * power) / power
 		},
 		timeStamp(str) {
-			var date = new Date(str);
-			var y = date.getFullYear();
-			var m = date.getMonth();
-			var d = date.getDate();
-			var h = date.getHours();
-			var mi = date.getMinutes();
-			var s = date.getSeconds();
-			var ms = date.getMilliseconds();
-			var tz = date.getTimezoneOffset();
+			let date = new Date(str);
+			let y = date.getFullYear();
+			let m = date.getMonth();
+			let d = date.getDate();
+			let h = date.getHours();
+			let mi = date.getMinutes();
+			let s = date.getSeconds();
+			let ms = date.getMilliseconds();
+			let tz = date.getTimezoneOffset();
 			y += 2990;
 			return new Date(y, m, d, h, mi, s, ms).toISOString();
 		}
